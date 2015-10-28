@@ -17,7 +17,7 @@ let Router = Backbone.Router.extend({
   initialize: function(appElement) {
     this.$el = appElement;  //get the div in index.html
 
-    this.contacts = new ContactsCollection();
+    this.contacts = new ContactsCollection();  //Router.contacts uses the ContactsCollection constructor
 
     let router = this; //declare to use in the function below
 
@@ -59,7 +59,7 @@ let Router = Backbone.Router.extend({
 
     var router = this;  //Router constructor
 
-    this.contacts.fetch().then(function(){
+    this.contacts.fetch().then(function(){  //points to Router.contacts which is a variable that holds an instance created from the ContactsCollection constructor
 
       router.$el.html( contactsTemplate(router.contacts.toJSON()) );
 

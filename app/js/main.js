@@ -134,7 +134,7 @@ var Router = _backbone2['default'].Router.extend({
   initialize: function initialize(appElement) {
     this.$el = appElement; //get the div in index.html
 
-    this.contacts = new _contacts_collection2['default']();
+    this.contacts = new _contacts_collection2['default'](); //Router.contacts uses the ContactsCollection constructor
 
     var router = this; //declare to use in the function below
 
@@ -180,6 +180,7 @@ var Router = _backbone2['default'].Router.extend({
     var router = this; //Router constructor
 
     this.contacts.fetch().then(function () {
+      //points to Router.contacts which is a variable that holds an instance created from the ContactsCollection constructor
 
       router.$el.html((0, _viewsContacts2['default'])(router.contacts.toJSON()));
     });
