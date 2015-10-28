@@ -59,7 +59,7 @@
     left: -1.85714em; }
 
 .fa-border {
-  padding: 0.2em 0.25em 0.15em;
+  padding: .2em .25em .15em;
   border: solid 0.08em #eee;
   border-radius: .1em; }
 
@@ -2019,6 +2019,36 @@
   content: ""; }
 
 body {
-  background: #e2ebf3; }
+  background: whits; }
+
+ul, li {
+  list-style: none;
+  line-height: 3em;
+  margin: 0;
+  padding: 0; }
+
+li {
+  border: 1px solid black; }
+
+h2 {
+  background-color: pink;
+  border: 1px solid black;
+  padding: 5%;
+  margin: 0 auto; }
+
+h3 {
+  background-color: white;
+  padding: 4%;
+  margin: 0 auto; }
+
+div {
+  width: 300px;
+  margin: 5%; }
+
+.contacts {
+  margin-left: 40px; }
+
+.details {
+  margin-left: 80px; }
 
 /*# sourceMappingURL=main.css.map */
