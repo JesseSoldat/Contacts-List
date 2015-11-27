@@ -1,3 +1,3 @@
-## Welcome to My Repo
+Using Backbone's Model, Collection and Router, we created a simple contact list.
 
-> I am your Readme.md file, you should probably update me.
+https://backbone-contactlist.surge.sh/
